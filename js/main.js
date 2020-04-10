@@ -133,8 +133,8 @@ $(document).ready(function(){
 					next_el = el.parents('.anim-images').find('img:first-child');
 				}
 				el.removeClass('active');
-				setTimeout(function(){next_el.addClass('active');},300);
-			},2600);
+				setTimeout(function(){next_el.addClass('active');},500);
+			},5000);
 		}
 	}
 	animImg();
