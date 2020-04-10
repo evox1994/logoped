@@ -124,4 +124,19 @@ $(document).ready(function(){
 	}
 	footerYear();
 
+	function animImg(){
+		if ($('.anim-images').find('img').length > 1){
+			setInterval(function(){
+				var el = $('.anim-images').find('img.active');
+				var next_el = el.next();
+				if (next_el.length === 0){
+					next_el = el.parents('.anim-images').find('img:first-child');
+				}
+				el.removeClass('active');
+				setTimeout(function(){next_el.addClass('active');},300);
+			},2600);
+		}
+	}
+	animImg();
+
 });

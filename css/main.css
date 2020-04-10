@@ -147,7 +147,47 @@
 .face .image img {
 	display: block;
 	max-width: 100%;
-	margin-left: auto;
+	margin: 0 auto;
+}
+
+.anim-images-wrap {
+	position: relative;
+}
+.anim-images-size {
+	opacity: 0;
+}
+.anim-images {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+}
+.anim-images img {
+	position: absolute;
+	max-height: 100% !important;
+	left: 50%;
+	bottom: 0;
+	opacity: 0;
+	-webkit-transform: scale(0) translateX(-50%);
+	-moz-transform: scale(0) translateX(-50%);
+	-ms-transform: scale(0) translateX(-50%);
+	transform: scale(0) translateX(-50%);
+	-webkit-transform-origin: left;
+	-moz-transform-origin: left;
+	-ms-transform-origin: left;
+	transform-origin: left;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+.anim-images img.active {
+	opacity: 1;
+	-webkit-transform: scale(1) translateX(-50%);
+	-moz-transform: scale(1) translateX(-50%);
+	-ms-transform: scale(1) translateX(-50%);
+	transform: scale(1) translateX(-50%);
 }
 
 
