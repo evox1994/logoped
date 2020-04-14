@@ -138,4 +138,28 @@ $(document).ready(function(){
 		slidesToScroll: 1
 	});
 
+	function burgerScroll(){
+		var st = $(window).scrollTop();
+		var hh = $('.header').outerHeight();
+
+		if ( $(window).width() > 768 ){
+			$('.header-scroll').removeClass('active');
+		} else {
+			if ( st > hh ){
+				$('.header-scroll').addClass('active');
+			} else {
+				$('.header-scroll').removeClass('active');
+			}
+		}
+	}
+	burgerScroll();
+
+	$(window).on('scroll',function(){
+		burgerScroll();
+	});
+
+	$(window).resize(function(){
+		burgerScroll();
+	});
+
 });

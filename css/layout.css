@@ -384,8 +384,8 @@ textarea:focus:-moz-placeholder {
     box-sizing: border-box;
 }
 .policy-text .radio-btn.error {
-    border-color: #ff0000;
-    background-color: #fff0ed;
+    border-color: #ff0000 !important;
+    background-color: #fff0ed !important;
 }
 .policy-text .radio-btn:hover {
     cursor: pointer;
