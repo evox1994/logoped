@@ -38,30 +38,6 @@ $(document).ready(function(){
 		$(this).removeClass('error');
 	});
 
-	/*$('form button[type="submit"]').click(function(){
-		if ( $(this).parents('form').find('.policy-text .radio-btn').hasClass('active') ) {
-			$(this).parents('form').find('input').each(function(){
-				if(!$(this).val().length) { 
-					event.preventDefault(); 
-					$(this).addClass("error"); 
-				} else { 
-					$(this).removeClass("error"); 
-				}
-			});
-			$(this).parents('form').find('textarea').each(function(){
-				if(!$(this).val().length) { 
-					event.preventDefault(); 
-					$(this).addClass("error"); 
-				} else { 
-					$(this).removeClass("error"); 
-				} 
-			});
-		} else {
-			$(this).parents('form').find('.policy-text .radio-btn').addClass('error');
-			event.preventDefault();
-		}
-	});*/
-
 	$('form').on('submit',function(){
 		var valid = true;
 
@@ -138,5 +114,28 @@ $(document).ready(function(){
 		}
 	}
 	animImg();
+
+	function inputId(){
+		var i = 0;
+		$('.b-input').each(function(){
+			i++;
+			$(this).find('label').attr('for','inp-'+i);
+			if ( $(this).find('input').length ){
+				$(this).find('input').attr('id','inp-'+i);
+			} else {
+				$(this).find('textarea').attr('id','inp-'+i);
+			}
+		});
+	}
+	inputId();
+
+	$('.b-select select').chosen({
+		disable_search: true
+	});
+
+	$('.personal-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
 
 });
