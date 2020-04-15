@@ -66,6 +66,11 @@
 	display: block;
 	max-width: 100%;
 }
+.b-text h3 {
+	display: block;
+	font-weight: 700;
+	font-size: 24px;
+}
 
 .ekr {
 	padding: 50px 0;
@@ -1500,6 +1505,13 @@
 	margin-top: 50px;
 }
 
+.policy-wrap {
+	padding: 30px;
+	text-align: left;
+	background-color: #ffffff;
+	margin-top: 40px;
+}
+
 
 
 
@@ -1623,6 +1635,9 @@
 	}
 	.b-text img {
 		max-height: 300px;
+	}
+	.b-text h3 {
+		font-size: 18px;
 	}
 
 	.header-top {
@@ -2012,6 +2027,10 @@
 	}
 	.thanks .btn {
 		margin-top: 30px;
+	}
+	.policy-wrap {
+		padding: 15px;
+		margin-top: 20px;
 	}
 }
 @media screen and (max-width: 560px){
