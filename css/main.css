@@ -1527,9 +1527,9 @@
 		font-size: 35px;
 	}
 
-	.header {
+	/*.header {
 		border-bottom: 1px solid #723021;
-	}
+	}*/
 	.header-top .wrap .text, .header .header-top .header-btn, .header-bot {
 		display: none;
 	}
@@ -1589,7 +1589,7 @@
 	}
 
 	.thanks .wrap {
-		min-height: calc(100vh - 212px);
+		min-height: calc(100vh - 211px);
 	}
 }
 @media screen and (max-width: 768px){
@@ -2008,7 +2008,7 @@
 	}
 
 	.thanks .wrap {
-		min-height: calc(100vh - 183px);
+		min-height: calc(100vh - 182px);
 	}
 	.thanks .btn {
 		margin-top: 30px;
