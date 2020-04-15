@@ -710,9 +710,6 @@
 .form-block .b-form {
 	margin-top: 30px;
 }
-.form-block.rev-form .b-form {
-	margin-top: 0;
-}
 .form-block .wrap .content .b-form {
 	margin-left: 0;
 }
@@ -1006,7 +1003,7 @@
 }
 .personal-slider li .image {
 	padding: 10px 10px 0;
-	height: 210px;
+	height: 300px;
 }
 .personal-list li .image img {
 	display: block;
@@ -1100,6 +1097,10 @@
 	max-width: 560px;
 	text-align: center;
 }
+.popup.popup-policy {
+	max-width: 760px;
+	text-align: left;
+}
 .popup .policy-text .radio-btn {
 	background-color: #723021;
 	border-color: #723021;
@@ -1109,6 +1110,9 @@
 	background-color: #ffffff;
 }
 .popup .b-form {
+	margin-top: 30px;
+}
+.popup .b-text {
 	margin-top: 30px;
 }
 
@@ -2028,8 +2032,16 @@
 	.thanks .btn {
 		margin-top: 30px;
 	}
+
 	.policy-wrap {
 		padding: 15px;
+		margin-top: 20px;
+	}
+
+	.popup {
+		padding: 30px 15px;
+	}
+	.popup .b-text {
 		margin-top: 20px;
 	}
 }
@@ -2133,7 +2145,6 @@
 	}
 	.personal-item .image {
 		width: 100%;
-		max-width: 200px;
 		margin: 0 auto 20px;
 	}
 	.personal-item .content {
