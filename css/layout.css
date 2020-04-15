@@ -129,7 +129,7 @@ h1,h2,h3,h4,h5,h6{
 label.error{
 	display: none !important;
 }
-input.error,textarea.error{
+input.error,textarea.error {
 	border-color: #ff0000 !important;
     background-color: #fff0ed !important;
 }
