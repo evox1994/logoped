@@ -1992,10 +1992,12 @@
 	}
 	.personal-item .title {
 		font-size: 16px;
+		text-align: center;
 	}
 	.personal-item .pos {
 		font-size: 14px;
 		margin-top: 15px;
+		text-align: center;
 	}
 	.personal-item .b-text {
 		margin-top: 15px;
