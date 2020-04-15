@@ -677,6 +677,9 @@
 	background-color: #723021;
 	color: #ffffff;
 }
+.form-block.rev-form {
+	background-color: #f08763;
+}
 .form-block .b-title {
 	color: #ffffff;
 }
@@ -701,6 +704,9 @@
 }
 .form-block .b-form {
 	margin-top: 30px;
+}
+.form-block.rev-form .b-form {
+	margin-top: 0;
 }
 .form-block .wrap .content .b-form {
 	margin-left: 0;
